@@ -1,0 +1,65 @@
+/* @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"); */
+body {
+  font-family: "EB Garamond", serif;
+  margin: 20px;
+  /* line-height: 1.1; */
+  padding: 12px 60px;
+}
+h1,
+h4,
+h2 {
+  text-align: center;
+  /* line-height: 0.3; */
+}
+.education, .experience, .certification, .projects, .skills{
+    text-align: left;
+    /* margin-bottom: 6px */
+    padding-bottom: 0.5px;;
+}
+
+.education-section,
+.experience-section,
+.skills-section,
+.projects-section,
+.certification-section {
+  padding-top: 10px;
+  margin-top: 20px;
+}
+.education-item,
+.skills-item,
+.project-item,
+.certification-item,
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+}
+.education-details,
+.skills-details,
+.project-details,
+.certification-details {
+  flex: 1;
+}
+.education-location,
+.skills-category,
+.project-category,
+.certification-category {
+  text-align: right;
+  width: 30%;
+}
+.skills-item,
+.project-item,
+.certification-item {
+  flex-direction: column;
+}
+.project-tech {
+  font-style: italic;
+  margin: 5px 0;
+}
+.certification-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
