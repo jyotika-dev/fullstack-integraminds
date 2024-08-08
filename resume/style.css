@@ -2,14 +2,15 @@
 body {
   font-family: "EB Garamond", serif;
   margin: 20px;
-  /* line-height: 1.1; */
+  line-height: 1.1;
   padding: 12px 60px;
 }
-h1,
-h4,
-h2 {
+.profile-section{
   text-align: center;
-  /* line-height: 0.3; */
+  line-height: 0.5;
+}
+hr{
+  border: 1px solid black;
 }
 .education, .experience, .certification, .projects, .skills{
     text-align: left;
@@ -52,7 +53,6 @@ h2 {
   flex-direction: column;
 }
 .project-tech {
-  font-style: italic;
   margin: 5px 0;
 }
 .certification-section ul {
