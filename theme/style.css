@@ -58,8 +58,6 @@ body.dark-theme {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.icon-left,
-
 .icon-right {
   color: #ffffff;
   opacity: 0.8;
@@ -82,9 +80,6 @@ body.dark-theme {
 .theme-switch:checked + .switch-label .icon-left {
   opacity: 0.5;
 }
-/* .theme-switch:checked + .switch-label .icon-middle {
-  opacity: 0;
-} */
 .theme-switch:checked + .switch-label .icon-right {
   opacity: 1;
 }
