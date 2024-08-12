@@ -5,6 +5,8 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to bottom, rgba(19, 19, 203, 0.66), black);
+  background-size: cover;
 }
 .container {
   padding: 30px;
@@ -18,13 +20,14 @@ body {
 .container p {
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 .element-btn {
-  margin: auto;
-  /* padding: 30px; */
+  display: flex; 
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: auto;
   padding: 0 90px;
 }
 .element-btn button {
@@ -38,7 +41,6 @@ body {
   background-color: #306dfc;
   width: auto;
   height: 60px;
-  /* margin: 0px 10px s30px 10px; */
   margin: 10px 10px;
 }
 .list {
@@ -50,13 +52,12 @@ body {
   font-size: 18px;
   font-weight: 600;
   margin-right: 200px;
-  /* margin-left: 20px; */
+  margin-top: 20px;
 }
 .list ul {
-  padding: 20px;
   margin-right: 200px;
   margin-left: 460px;
   color: #fff;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
