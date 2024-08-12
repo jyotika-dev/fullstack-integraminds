@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* background: #383838; */
+}
+.container {
+  background: #383838;
+  margin: 10px 10px;
+}
+.container h1 {
+  color: rgb(143, 235, 247);
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container .con-p {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.container .colour-div {
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(
+    31deg,
+    rgb(129, 237, 237),
+    rgb(245, 160, 163)
+  );
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 500px;
+}
+.clr-btn {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  cursor: pointer;
+}
+/* button{
+    background: #000;
+    color: #231a1a;
+} */
+button p {
+  background: #fff;
+  color: #000;
+}
+.container p {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.elements-btn {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 260px;
+  cursor: pointer;
+  width: 700px;
+  height: 48px;
+}
+.elements-btn button {
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0px 15px;
+  border-radius: 15px;
+  margin-right: 4px;
+}
+.elements-btn button:hover {
+  background: rgb(191, 243, 243);
+  color: #000;
+}
+.para p{
+  padding-bottom: 40px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 200px
+}
