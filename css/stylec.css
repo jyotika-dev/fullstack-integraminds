@@ -2,6 +2,24 @@ body{
     background-color: #243133;
 
 }
+a{
+  color: red;
+  display: block;
+}
+[target]::after{
+  content: "";
+  display: inline-block;
+  color: blue;
+  width: 10px;
+  height: 10px;
+  background-image: url(/bg-img.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto 5px;
+  
+
+}
 .container {
   padding: 20px;
   margin: 20px;
@@ -37,6 +55,7 @@ textarea {
   /* justify-content: space-around; */
   width: 380px;
   height: 20px;
+  color: #000;
 }
 .send {
   /* justify-items: right; */
@@ -54,6 +73,21 @@ textarea {
   padding: 10px 20px;
   margin: 20px 20px;
   width: 20px;
+}
+.receive.message-receive1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(
+    135deg,
+    #dbebc3 0%,
+    #dbebc3 50%,
+    transparent 50%,
+    transparent
+  );
 }
 .message-receive2 {
   color: white;
@@ -90,20 +124,4 @@ textarea {
   padding: 20px 60px;
   margin: 20px 20px;
   width: 200px;
-}
-.theme-light{
-    --color-primary:#0060df;
-    --color-secondary:#fbfbfe;
-    --color-accent: #fd6f53;
-    --font-color: #000000;
-}
-.theme-dark{
-    --color-primary:#17ed90;
-    --color-secondary:#243133;
-    --color-accent: #12cdea;
-    --font-color: #ffffff;
-}
-button{
-    color: var(--font-color);
-    background-color: var(--color-primary);
 }
