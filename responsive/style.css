@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 20px;
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+}
+.banner1 img {
+  width: 200px;
+  height: 200px;
+}
+.banner2 img {
+  width: 200px;
+  height: 200px;
+}
+.banner p{
+    width: 50%;
+}
+@media(max-width: 780px){
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner p{
+        width: 100%;
+    }
+}
