@@ -1,0 +1,13 @@
+{
+    "_id": "person1",
+    "fullName": "John Hook",
+    "age": 36,
+    "dob": "12/08/2005",
+    "address": {
+        "houseNo": "13",
+        "city":{
+            "name": "New York",
+            "key": "NY"
+        }
+    }
+}
