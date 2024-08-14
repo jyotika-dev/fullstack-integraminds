@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>array</h1>
+
+    <script>
+        const array1 = ["obj1", "oj2", "objj3", "obj4"];
+        const numbers = [5, 6, 7, 8, 10, 9, 12];
+        const numbers2 = [5, 6, 7, 8, [1, 2, [4, 3]]];
+        console.log(array1);
+        for (let i = 0; i < array1.length; i++) {
+            console.log("Index:", i, "and Value:", array1[i]);
+        }
+
+        //map
+        const newArr1 = array1.map((array1, index) => {
+            return `${index + 1}.${array1}`;
+        });
+        console.log(newArr1);
+
+        //filter
+        const newArr2 = numbers.filter((numbers) => numbers % 2 === 0);
+        console.log(newArr2);
+
+        //join
+        const newArr3 = array1.join("-");
+        console.log(newArr3);
+
+        //concat
+        const newArr4 = array1.concat(numbers);
+        console.log(newArr4);
+
+        //flat
+        const newArr5 = numbers2.flat();
+        console.log(newArr5);
+
+        //slice
+        const newArr6 = array1.slice(1, 3);
+        const newArr7 = numbers.slice(1, 4);
+        console.log(newArr6);
+        console.log(newArr7);
+
+        //forEach
+        const newArr8 = numbers.forEach((element) => console.log(element));
+        const newArr9 = array1.forEach((element) => console.log(element));
+
+        //push
+        const newArr10 = array1.push("obj6");
+        console.log(array1);
+
+        //pop
+        const newArr11 = numbers.pop();
+        console.log(numbers);
+
+        //shift
+        const newArr12 = numbers.shift();
+        console.log(numbers);
+
+        //sort
+        const newArr13 = numbers.sort();
+        const newArr14 = array1.sort();
+        console.log(newArr13);
+        console.log(array1);
+
+        //fill
+        const newArr15 = numbers.fill(0, 2, 4);
+        console.log(numbers);
+
+        //find **
+        numbers.push(2, 4, 6, 8, 12, 45);
+        console.log(numbers);
+        const newArr16 = numbers.find((element) => element > 2);
+        console.log(newArr16);
+
+        //findIndex **
+        const newArr17 = numbers.findIndex((element) => element > 12);
+        console.log(newArr17);
+
+        //indexOf **
+        console.log(array1);
+        const newArr18 = array1.indexOf("obj6");
+        console.log(newArr18);
+
+        // //some **
+        const newArr19 = numbers.some((element) => element > 10);
+        console.log(newArr19)
+
+        //every **
+        const newArr20 = numbers.every((element) => element > 8);
+        console.log(newArr20);
+
+        //includes
+        const newArr21 = numbers.includes(45);
+        console.log(newArr21);
+    </script>
+</body>
+
+</html>
