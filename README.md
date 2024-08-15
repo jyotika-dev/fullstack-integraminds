@@ -73,7 +73,7 @@ if (-3.14)
 if (Infinity)
 if (-Infinity)
 
-##CHECKLIST
+## CHECKLIST
 
 - Resume HTML & CSS
 - Timetable
@@ -107,13 +107,13 @@ if (-Infinity)
 - Updating the color using javascript
 - Working with Mouse Event Listeners
 - Try this api
-
   Main URL: https://jsonplaceholder.typicode.com/
-  1. https://jsonplaceholder.typicode.com/users
-  2. https://jsonplaceholder.typicode.com/comments
-  3. https://jsonplaceholder.typicode.com/photos
-  4. https://jsonplaceholder.typicode.com/todos
-  5. https://jsonplaceholder.typicode.com/albums
+  1. JSON Placeholder - 1 (users) - https://jsonplaceholder.typicode.com/users
+  2. JSON Placeholder - 1 (comments) - https://jsonplaceholder.typicode.com/comments
+  3. JSON Placeholder - 1 (photos) - https://jsonplaceholder.typicode.com/photos
+  4. JSON Placeholder - 1 (todos) - https://jsonplaceholder.typicode.com/todos
+  5. JSON Placeholder - 1 (albums) - https://jsonplaceholder.typicode.com/albums
+- Normal Function & Arrow Functions [No Arguments, With Arguments, With Return, Implicit Return]
 
 ## TO DO
 
