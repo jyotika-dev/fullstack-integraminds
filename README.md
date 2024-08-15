@@ -75,27 +75,27 @@ if (-Infinity)
 
 ## CHECKLIST
 
-- Resume HTML & CSS
-- Timetable
-- Sticky
-- Chat Pseudo Element
-- Register form
-- Whatsapp Message
-- Link playing with css
-- Dark/Light
-- Github committed
-- Example 1 [table]
-- Color code
-- Log buttons
+- Resume HTML & CSS ✅
+- Timetable ✅
+- Sticky ✅
+- Chat Pseudo Element ✅
+- Register form ✅
+- Whatsapp Message ✅
+- Link playing with css ✅
+- Dark/Light ✅
+- Github committed ✅
+- Example 1 [table] ✅
+- Color code ✅
+- Log buttons ✅
 - Grid Example
 - Flex Example
-- Google Home Example
+- Google Home Example ✅
 - Resume JSON
 - Working with Truthy & Falsy
 - Playing with Variable
 - Playing with console
-- Working with Array [JS]
-- Multi Dimensional Array
+- Working with Array [JS] ✅
+- Multi Dimensional Array ✅
 - Medium.com Example
 - Two Errors
 - Async & Await - JSON Placeholder
