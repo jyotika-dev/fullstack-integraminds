@@ -91,9 +91,9 @@ if (-Infinity)
 - ✅ Flex Example
 - ✅ Google Home Example 
 - ✅ Resume JSON
-- Working with Truthy & Falsy
-- Playing with Variable
-- Playing with console
+- ✅ Working with Truthy & Falsy (in md file)
+- ✅ Playing with Variable
+- ✅ Playing with console
 - ✅ Working with Array [JS] 
 - ✅ Multi Dimensional Array 
 - Medium.com Example
