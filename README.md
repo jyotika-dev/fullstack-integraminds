@@ -96,16 +96,16 @@ if (-Infinity)
 - ✅ Playing with console
 - ✅ Working with Array [JS] 
 - ✅ Multi Dimensional Array 
-- Medium.com Example
+- ✅ Medium.com Example
 - Two Errors
-- Async & Await - JSON Placeholder
-- querySelector
-- appendChild
-- Remove Element
-- setAttribute
-- Toggle
-- Updating the color using javascript
-- Working with Mouse Event Listeners
+- ✅ Async & Await - JSON Placeholder
+- ✅ querySelector
+- ✅ appendChild
+- ✅ Remove Element
+- ✅ setAttribute
+- ✅ Toggle
+- ✅ Updating the color using javascript
+- ✅ Working with Mouse Event Listeners
 - Try this api
   Main URL: https://jsonplaceholder.typicode.com/
   1. JSON Placeholder - 1 (users) - https://jsonplaceholder.typicode.com/users
@@ -117,8 +117,10 @@ if (-Infinity)
 
 ## TO DO
 
-- Medium Home Page
-- Promise
-- Async Await
+- Medium Home Page ✅
+- Promise ✅
+- Async Await ✅
+- Mouse event listener ✅
 - Rest API
-- Mouse event listener
+- React (16 Aug)
+
