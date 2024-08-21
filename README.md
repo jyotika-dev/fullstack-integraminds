@@ -124,3 +124,28 @@ if (-Infinity)
 - Rest API
 - React (16 Aug)
 
+### REACT
+- Official Documentation: https://react.dev/
+- npm create vite@latest my-react-app -- --template react
+- npm install
+- npm run dev
+
+-destructuring
+- Errors
+  1. E1: React Reference Error 1 ✅
+  2. E2: Invalid Package - Failed to resolve import ✅
+  3. E3: Unterminated string constant. ✅
+  4. E4: ReferenceError: viteLogo is not define ✅
+  5. E5: Unexpected token, expected "," ✅
+  6. E6: Unterminated JSX contents. ✅
+  7. E7: Identifier 'xxx' has already been declared ✅
+
+  <!-- 3. type error
+  4. range error
+  5. syntax error -->
+- React Hooks
+  1. Usestate
+  2. UseEffect
+  3. UseContext
+  
+
