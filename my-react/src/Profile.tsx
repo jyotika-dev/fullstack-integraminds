@@ -1,3 +1,5 @@
+import React from "react";
+
 const Profile = () => {
   const profile = {
     name: "John Doe",

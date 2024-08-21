@@ -115,6 +115,10 @@ if (-Infinity)
   5. JSON Placeholder - 1 (albums) - https://jsonplaceholder.typicode.com/albums
   6. JSON Placeholder - 1 (posts) - https://jsonplaceholder.typicode.com/posts
 - ✅ Normal Function & Arrow Functions [No Arguments, With Arguments, With Return, Implicit Return]
+- ✅ Posts
+- ✅ PostsFromServer
+- ✅ Profile
+- ✅ User
 - use Memo
 - use ref
 - context
