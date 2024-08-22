@@ -8,6 +8,7 @@ import Profile from "./Profile";
 import PostsFromServer from "./PostsFromServer";
 import UserComponent from "./user";
 // import { error } from "console";
+import UsersList from "./Users"
 const App = () => {
   const [error, setError] = useState(null);
 
@@ -67,27 +68,8 @@ const App = () => {
   //   { name: "Johan", age: 30 },
   // ];
 
-  const [isLoading, setIsLoading] = useState(true);
-  const [users, setUsers] = useState([]);
-
-  const getUsersDataFromServer = () => {
-    setIsLoading(true);
-    setTimeout(() => {
-      fetch("https://localhost:3000/users")
-        .then((response) => response.json())
-        .then((data) => {
-          setIsLoading(false);
-          setUsers(data);
-        })
-        .catch((error) => {
-          setIsLoading(false);
-          setError(error.message);
-        }, 2000);
-    });
-  };
-  useEffect(() => {
-    getUsersDataFromServer();
-  }, []);
+  
+ 
 
   return (
     <>
@@ -121,6 +103,7 @@ const App = () => {
         onClickFromParent={onClickInParent}
       /> */}
 
+      <UsersList/>
       <button onClick={getUsersDataFromServer}>Refresh</button>
 
       <div className="container">
