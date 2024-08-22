@@ -1070,18 +1070,56 @@ items = [
     
 ]
 
-#Task: Iterate the lists and list the states along with state properties
+#Task 1: Iterate the lists and list the states along with state properties
 
 for country in items:
-    print("Country: ", country['name'])
-    for state in country['states']:
-        print("State: ", state['name'])
-        print("State Code: ", state['state_code'])
-        # print("Latitude: ", state['latitude'])
-        # print("Longitude: ", state['longitude'])
-        print("Type: ", state['type'])
+    print( "Country: ", country["name"])
+    for state in country["state"]:
+        print("id")
+        
+
+for country in items:
+    print( "Country: ", country["name"])
+    for key, value in country["translations"].items:
+        print(key, value)
         print("\n")
-    print("\n\n\n")
+        
+import json
+with open("country-state.json") as file:
+    items =json.load(file)
+    
+    
+#Task 3: Instead  of hardcoding the json data inside the python, read the jsonand list the states along with the state properties
+for idx, country in enumerate(items):
+    print("country: ", idx, country["name"])
+    for state in country["states"]:
+        print("id: ", state["id"])                    
+        print("name: ", state["name"])                    
+        print("state_code: ", state["state_code"])                    
+        print("latitude: ", state["latitude"])                    
+        print("longitude: ", state["longitude"])                    
+        print("type: ", state["type"])                    
+        print("\n")
+        
+        
+# Task 4: Do all the above task using while loop
+
+while idx < len(items):
+    country = items[idx]
+    print ("Country: ", idx, country["name"])
+    for state in country["states"]:
+        print("id: ", state["id"])                    
+        print("name: ", state["name"])                    
+        print("state_code: ", state["state_code"])                    
+        print("latitude: ", state["latitude"])                    
+        print("longitude: ", state["longitude"])                    
+        print("type: ", state["type"])                    
+        print("\n")
+    idx += 1    
+
+        
+
+
     
     
     
