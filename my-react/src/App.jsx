@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -9,6 +9,8 @@ import PostsFromServer from "./PostsFromServer";
 import UserComponent from "./user";
 // import { error } from "console";
 const App = () => {
+  const [error, setError] = useState(null);
+
   // const posts = [
   //   {
   //     userId: 1,
@@ -68,6 +70,25 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [users, setUsers] = useState([]);
 
+  const getUsersDataFromServer = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      fetch("https://localhost:3000/users")
+        .then((response) => response.json())
+        .then((data) => {
+          setIsLoading(false);
+          setUsers(data);
+        })
+        .catch((error) => {
+          setIsLoading(false);
+          setError(error.message);
+        }, 2000);
+    });
+  };
+  useEffect(() => {
+    getUsersDataFromServer();
+  }, []);
+
   return (
     <>
       {/* StateExample */}
@@ -100,14 +121,16 @@ const App = () => {
         onClickFromParent={onClickInParent}
       /> */}
 
+      <button onClick={getUsersDataFromServer}>Refresh</button>
+
       <div className="container">
         {isLoading && (
           <div className="loading">
-            <img src="https:i.gifer.com/ZKZg.gif" alt="Loading.." />
+            <img src="https://i.gifer.com/ZKZg.gif" alt="Loading.." />
             Loading..
           </div>
         )}
-        {!isLoading && users.length === 0 && <div>No data found</div>}
+        {!isLoading && !error && users.length === 0 && <div>No data found</div>}
         {!isLoading && !error && <div>{error}</div>}
         {!isLoading &&
           !error &&

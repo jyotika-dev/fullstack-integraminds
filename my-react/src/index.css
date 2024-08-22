@@ -5,6 +5,11 @@
   flex-direction: column;
   margin-top: 20px;
 }
+.user h2 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #fff;
+}
 .user h3 {
   margin-bottom: 10px;
   font-size: 12px;
