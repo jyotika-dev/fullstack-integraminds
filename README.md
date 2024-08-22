@@ -136,6 +136,9 @@ if (-Infinity)
 - use ref
 - context
 - routing
+- iterate.py
+- resume.py
+
 
 ### REACT
 - Official Documentation: https://react.dev/
@@ -160,8 +163,12 @@ if (-Infinity)
   1. Usestate
   2. UseEffect
   3. UseContext
+- ["https://www.npmjs.com/package/json-server"]
+- ["https://github.com/dr5hn/countries-states-cities-database/blob/master/countries%2Bstates.json"]
 
 
-<!-- CONTINUE FROM LOADING GIF PART -->
+<!-- CONTINUE FROM LOADING GIF PART 
+      SCREENSHOT: 173
+ -->
   
 
