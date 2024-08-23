@@ -8,9 +8,21 @@ import Profile from "./Profile";
 import PostsFromServer from "./PostsFromServer";
 import UserComponent from "./user";
 // import { error } from "console";
-import UsersList from "./Users"
+import UsersList from "./Users";
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+
 const App = () => {
   const [error, setError] = useState(null);
+
+  const router = createBrowserRouter([
+    {
+      path: "/users",
+      element: <div>Hello world!</div>,
+    },
+  ]);
 
   // const posts = [
   //   {
@@ -68,9 +80,6 @@ const App = () => {
   //   { name: "Johan", age: 30 },
   // ];
 
-  
- 
-
   return (
     <>
       {/* StateExample */}
@@ -103,8 +112,9 @@ const App = () => {
         onClickFromParent={onClickInParent}
       /> */}
 
-      <UsersList/>
-      <button onClick={getUsersDataFromServer}>Refresh</button>
+      <RouterProvider router={router}/>
+      <UsersList />
+      {/* <button onClick={getUsersDataFromServer}>Refresh</button> */}
 
       <div className="container">
         {isLoading && (

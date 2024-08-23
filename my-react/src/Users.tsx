@@ -3,17 +3,23 @@ import UserComponent from "./user";
 import React from "react";
 
 const UsersList = () => {
-    [
-        { name: "John Doe", age: 30 },
-        { name: "hue key", age: 23 },
-        { name: "jane doe", age: 25 },
-        { name: "Johan", age: 30 },
-    ];
+    // const user = [
+    //     { name: "John Doe", age: 30 },
+    //     { name: "hue key", age: 23 },
+    //     { name: "jane doe", age: 25 },
+    //     { name: "Johan", age: 30 },
+    // ];
     const [isLoading, setIsLoading] = useState(true);
     const [users, setUsers] = useState([]);
     const [error, setError] = useState(null);
 
-    const getUsersDataFromServer = () => {
+    // Server Data
+    //1.Loading / waiting
+    //2. Error
+    //3. Success
+        // 3.1. Empty
+        // 3.2. Data
+        const getUsersDataFromServer = () => {
         setIsLoading(true);
         setTimeout(() => {
             fetch("https://localhost:3000/users")
