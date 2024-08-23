@@ -151,7 +151,7 @@ items = [
                 "state_code": "LIM",
                 "latitude": "-12.04637310",
                 "longitude": "-77.04275400",
-                "type": null
+                # "type": null
             },
             {
                 "id": 4922,
@@ -159,7 +159,7 @@ items = [
                 "state_code": "LOR",
                 "latitude": "-4.37416430",
                 "longitude": "-76.13042640",
-                "type": null
+                # "type": null
             },
             {
                 "id": 3678,
@@ -167,7 +167,7 @@ items = [
                 "state_code": "MDD",
                 "latitude": "-11.76687050",
                 "longitude": "-70.81199530",
-                "type": null
+                # "type": null
             },
             {
                 "id": 3698,
@@ -175,7 +175,7 @@ items = [
                 "state_code": "MOQ",
                 "latitude": "-17.19273610",
                 "longitude": "-70.93281380",
-                "type": null
+                # "type": null
             },
             {
                 "id": 3686,
@@ -183,7 +183,7 @@ items = [
                 "state_code": "PAS",
                 "latitude": "46.23050490",
                 "longitude": "-119.09223160",
-                "type": null
+                # "type": null
             },
             {
                 "id": 3697,
@@ -191,7 +191,7 @@ items = [
                 "state_code": "PIU",
                 "latitude": "-5.17828840",
                 "longitude": "-80.65488820",
-                "type": null
+                # "type": null
             },
             {
                 "id": 3682,
@@ -199,7 +199,7 @@ items = [
                 "state_code": "PUN",
                 "latitude": "-15.84022180",
                 "longitude": "-70.02188050",
-                "type": null
+                # "type": null
             },
             {
                 "id": 3694,
@@ -207,7 +207,7 @@ items = [
                 "state_code": "SAM",
                 "latitude": "37.08494640",
                 "longitude": "-121.61022160",
-                "type": null
+                # "type": null
             },
             {
                 "id": 3696,
@@ -215,7 +215,7 @@ items = [
                 "state_code": "TAC",
                 "latitude": "-18.00656790",
                 "longitude": "-70.24627410",
-                "type": null
+                # "type": null
             },
             {
                 "id": 3689,
@@ -223,7 +223,7 @@ items = [
                 "state_code": "TUM",
                 "latitude": "-3.55649210",
                 "longitude": "-80.42708850",
-                "type": null
+                # "type": null
             },
             {
                 "id": 3684,
@@ -231,7 +231,7 @@ items = [
                 "state_code": "UCA",
                 "latitude": "-9.82511830",
                 "longitude": "-73.08774900",
-                "type": null
+                # "type": null
             }
         ]
     },
@@ -1073,6 +1073,7 @@ items = [
 #Task 1: Iterate the lists and list the states along with state properties
 
 for country in items:
+    # Add your code here
     print( "Country: ", country["name"])
     for state in country["state"]:
         print("id")

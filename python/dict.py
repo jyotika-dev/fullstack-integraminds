@@ -27,8 +27,16 @@ print("student address: ", student["address"])
 
 #Accessing the student's city
 print("student city: ", student["address"]["city"])
+keys=["name", "age", "isStudent", "hobbies"]
+for key in keys:
+    if key in student:
+        print(key, student[key])
+    else:
+        print(f"{key} not found")
 
 #Accessing the studnet's hobbies and iterate list with index
 for index, hobby in enumerate(student["hobbies"]):
     print(index, hobby)
+    
+
     
