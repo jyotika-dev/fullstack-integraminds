@@ -178,3 +178,34 @@ if (-Infinity)
 
 
 
+Read
+- find(query, projection) - returns array or empty array
+- findOne - returns object or null
+
+Write
+- insertOne
+- insertMany
+
+Update
+- updateOne
+  - $set
+  - $unset
+  - $inc
+  - $push
+  - $pull
+  ....
+- updateMany
+
+Delete
+- deleteOne
+- deleteMany
+keep
+Pinned
+Aggregation
+- aggregate
+- pipeline
+  - $match
+  - $group
+  - $project
+  - $sort
+  - $limit
