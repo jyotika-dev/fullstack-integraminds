@@ -1,19 +1,24 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
-// import 
+import "./App.css";
 
 import LoginForm from "./Login";
+import RegisterForm from "./Register";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <div>Home Page</div>,
+      element: <div className="home">Home Page</div>,
     },
     {
       path: "/login",
       element: <LoginForm />,
     },
+    {
+      path: "/register",
+      element: <RegisterForm />,
+    }
   ]);
 
   return (
@@ -21,6 +26,7 @@ function App() {
       <nav>
         <a href="/">Home</a>
         <a href="/login">Login</a>
+        <a href="/register">Register</a>
       </nav>
 
       <RouterProvider router={router} />
