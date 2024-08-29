@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./login.css"
 
+import { useNavigate } from 'react-router-dom';
+
 const G_URL = "http://127.0.0.1:5000";
 
 
@@ -12,29 +14,40 @@ const LoginForm = () => {
     const [email, setEmail] = React.useState("s1@gmail.com");
     const [password, setPassword] = React.useState("p1");
 
+    const navigate = useNavigate(); 
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsLoading(true);
         setServerMsg("");
         setClassName("");
         console.log(email, password);
+        try {
+            const response = await axios({
+                method: 'post',
+                url: `${G_URL}/login`,
+                data: {
+                    email,
+                    password
+                }
+            });
 
-        const response = await axios({
-            method: 'post',
-            url: `${G_URL}/login`,
-            data: {
-                email,
-                password
+            const { status, cls, msg, payload } = response.data;
+            setIsLoading(false);
+            setClassName(cls);
+            setServerMsg(msg);
+
+            if (response.data.status === 1) {
+                alert("Login Successful")
+                localStorage.setItem('token', payload.token);
+                navigate("/Dashboard");
+            }else{
+                alert(response.data.msg)
             }
-        });
-
-        const { status, cls, msg, payload } = response.data;
-        setIsLoading(false);
-        setClassName(cls);
-        setServerMsg(msg);
-
-        if (!status) {
-            return;
+        } catch (error) {
+            setIsLoading(false);
+            setClassName("error");
+            setServerMsg("Server Error");
         }
 
     };
@@ -69,29 +82,3 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

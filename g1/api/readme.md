@@ -26,3 +26,5 @@ https://flask-restful.readthedocs.io/en/latest/quickstart.html#a-minimal-api
 # to run 
 - flask --app api run --host=0.0.0.0 --debug (for flask)
 - python api.py (for python)
+
+- app.config['JWT_SECRET_KEY'] = 's3cr3t-k3y_f0r_my_@pp!' 

@@ -1,6 +1,6 @@
-# from flask import request
 from flask import request
 from flask_restful import Resource
+from flask_jwt_extended import JWTManager, create_access_token
 
 from db import mdb
 
@@ -52,16 +52,30 @@ class Login(Resource):
             
         dbPswd = dbuser["password"]
         if password !=  dbPswd:
-                return {
-                    "status" : 0,
-                    "cls": "danger",
-                    "msg": "Given password is not correct",
-                    "payload": {"input": input, "dbuser": dbuser}
+            # access_token = create_access_token(identity=email)
+            return {
+                "status": 0,
+                "cls": "danger",
+                "msg": "Login failed",
+                "payload": {
+                    "token": access_token
                 }
+            }
+        else:
+            access_token = create_access_token(identity=email)
+            return {
+                "status": 1,
+                "cls": "success",
+                "msg": "Login successful",
+                "payload": {
+                    "token": access_token
+                }
+            }
             
         print("dbuser: ",dbuser);
 
-            
+        #Step 2 Generate token
+        # token="" #Use Flask JWT extended to generate token  
             
         return {
             "status" : 1,
