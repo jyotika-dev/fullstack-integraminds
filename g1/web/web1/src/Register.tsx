@@ -43,6 +43,8 @@ const RegisterForm = props => {
 
     return (
         <form id="registerForm" onSubmit={handleSubmit}>
+             <h1>Register</h1>
+             <br />
             <label htmlFor="email">Email</label>
             <input
                 type="email"

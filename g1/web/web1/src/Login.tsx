@@ -14,7 +14,7 @@ const LoginForm = () => {
     const [email, setEmail] = React.useState("s1@gmail.com");
     const [password, setPassword] = React.useState("p1");
 
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -41,19 +41,23 @@ const LoginForm = () => {
                 alert("Login Successful")
                 localStorage.setItem('token', payload.token);
                 navigate("/Dashboard");
-            }else{
-                alert(response.data.msg)
+            } else {
+                alert("Incorrect Credentials")
             }
         } catch (error) {
             setIsLoading(false);
             setClassName("error");
             setServerMsg("Server Error");
+            alert("Incorrect Credentials")
+
         }
 
     };
 
     return (
         <form id="loginForm" onSubmit={handleSubmit}>
+            <h1>Login</h1>
+            <br />
             <label htmlFor="email">Email: </label>
             <input
                 type="email"

@@ -33,21 +33,19 @@ class Login(Resource):
         
         dbuser = mdb.users.find_one({"email": email})
         
-        if not {dbuser and "_id" in dbuser}:
+        if not dbuser:  # Check if dbuser is None (user not found)
             return {
-                "status" : 0,
+                "status": 0,
                 "cls": "danger",
-                "msg": "Given email not exists",
-                "payload": {"input": input, "dbuser": dbuser}
-            }
-            
-        dbstatus = dbuser["status"]
-        if dbstatus !=  "active":
+                "msg": "User not found"
+            }, 401  # Unauthorized
+
+        # Now you can safely access dbuser["status"]
+        if dbuser["status"] != "active":
             return {
-                    "status" : 0,
-                    "cls": "danger",
-                    "msg": "Given email exists but the status is not active",
-                    "payload": {"input": input, "dbuser": dbuser}
+                "status": 0,
+                "cls": "danger",
+                "msg": "Given email exists but the status is not active"
             }
             
         dbPswd = dbuser["password"]
